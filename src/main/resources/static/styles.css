@@ -1,0 +1,148 @@
+/* DARK THEME BASE */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #281428;
+    color: #e5e7eb;
+}
+
+/* HERO PANEL */
+.hero-panel {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-card {
+    background: #1e293b; /* clean dark grey */
+    padding: 30px 25px;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    max-width: 250px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.hero-card h2 {
+    margin: 10px 0;
+    color: #f5e9f7; /* soft purple-white */
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* SOCIAL ICONS */
+.socials a {
+    margin: 5px;
+    font-size: 20px;
+    color: #cbd5e1; /* soft grey */
+    transition: 0.2s;
+}
+
+.socials a:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+/* CONTENT */
+.content {
+    margin-left: 300px;
+    padding: 50px;
+    width: 100%;
+}
+
+/* SECTIONS */
+.section {
+    margin-bottom: 80px;
+}
+
+/* TITLE */
+.big-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* INTRO */
+.intro {
+    max-width: 500px;
+    font-size: 1.1rem;
+    color: #cbd5f5;
+}
+
+/* ========================= */
+/* FLOATING NAV BAR */
+/* ========================= */
+
+.floating-nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    padding: 12px 20px;
+    border-radius: 30px;
+
+    background: rgba(30, 41, 59, 0.6); /* grey glass */
+    backdrop-filter: blur(10px);
+
+    width: fit-content;
+}
+
+/* NAV ICONS */
+.floating-nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
+    transition: 0.2s;
+}
+
+/* HOVER EFFECT */
+.floating-nav a:hover {
+    color: #38bdf8;
+    transform: scale(1.2);
+}
+
+/* PROJECTS */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    padding: 20px;
+    background: #1e293b;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #e5e7eb;
+    transition: 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background: #334155;
+}
