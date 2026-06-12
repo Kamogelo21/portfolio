@@ -2,13 +2,21 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #281428;
+    background: radial-gradient(circle at top left, #3a1f3a 0%, #0f0f14 40%, #0b0b10 100%);
     color: #e5e7eb;
+}
+
+.layout {
+    display: flex;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* HERO PANEL */
 .hero-panel {
-    width: 300px;
+    width: 400px;
     height: 100vh;
     position: fixed;
     left: 0;
@@ -20,34 +28,37 @@ body {
 }
 
 .hero-card {
-    background: #1e293b; /* clean dark grey */
-    padding: 30px 25px;
-    border-radius: 16px;
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(12px);
+
+    padding: 10px 20px;
+    border-radius: 18px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 
-    width: 100%;
-    max-width: 250px;
+    width: 300px;
+    height: 550px;
 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
 
 .hero-card h2 {
     margin: 10px 0;
+    padding: 10px 20px;
     color: #f5e9f7; /* soft purple-white */
 }
 
 /* PROFILE IMAGE */
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 340px;
     border-radius: 12px;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 /* SOCIAL ICONS */
@@ -65,8 +76,8 @@ body {
 
 /* CONTENT */
 .content {
-    margin-left: 300px;
-    padding: 50px;
+    margin-left: 450px;
+    padding: 20px;
     width: 100%;
 }
 
@@ -77,8 +88,16 @@ body {
 
 /* TITLE */
 .big-title {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-family: "Tahoma", sans-serif;
+    font-size: 8rem;
+    font-weight: 1000;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+    display: inline-block;
+
+    background: linear-gradient(90deg, #ffffff, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* INTRO */
@@ -87,62 +106,243 @@ body {
     font-size: 1.1rem;
     color: #cbd5f5;
 }
-
 /* ========================= */
-/* FLOATING NAV BAR */
+/* FLOATING NAV (FIXED) */
 /* ========================= */
 
 .floating-nav {
-    position: fixed;
-    top: 20px;
+    position: fixed; /* FIXED */
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
+    gap: 30px;
 
     padding: 12px 20px;
     border-radius: 30px;
 
-    background: rgba(30, 41, 59, 0.6); /* grey glass */
+    background: rgba(30, 41, 59, 0.6);
     backdrop-filter: blur(10px);
 
-    width: fit-content;
+    z-index: 1000; /* IMPORTANT */
 }
 
-/* NAV ICONS */
 .floating-nav a {
-    text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     color: #e5e7eb;
-    transition: 0.2s;
 }
 
-/* HOVER EFFECT */
 .floating-nav a:hover {
     color: #38bdf8;
     transform: scale(1.2);
 }
+/* ========================= */
+/* PROJECTS (CLEAN REDESIGN) */
+/* ========================= */
 
-/* PROJECTS */
+.projects-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+/* IMAGE (RIGHT SIDE) */
+.project-thumb {
+    width: 180px;
+    height: 120px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.project-thumb:hover {
+    transform: scale(1.05);
+}
+
+.project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* PROJECT CARD (NAME ONLY) */
+.project-text {
+    flex: 1;
+}
+
+.project-text a {
+    text-decoration: none;
+}
+
+.project-text h3 {
+    font-size: 1.3rem;
+    padding: 15px 20px;
+    border-radius: 12px;
+
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.05);
+
+    transition: 0.3s;
+}
+
+.project-text h3:hover {
+    background: rgba(51, 65, 85, 0.6);
+    transform: translateY(-3px);
+}
+/* ========================= */
+/* ABOUT (REDESIGNED ✨) */
+/* ========================= */
+
+#about {
+    max-width: 700px;
+}
+
+.about-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    background: rgba(30, 41, 59, 0.5);
+    padding: 20px;
+    border-radius: 14px;
+
+    line-height: 1.7;
+    color: #d1d5db;
+
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+
+/* ========================= */
+/* CONTACT (FIXED + CLEAN) */
+/* ========================= */
+
+.contact h1 {
+    font-size: 3rem; /* reduced */
+}
+
+/* FIX selector */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* labels ABOVE inputs */
+#contactForm label {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* inputs */
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+
+/* message box full width */
+#contactForm textarea {
+    width: 100%;
+}
+
+/* button full width */
+#contactForm button {
+    width: 100%;
+}
+/* PROJECTS
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
-.project-card {
+/*.project-card] {
     padding: 20px;
-    background: #1e293b;
-    border-radius: 10px;
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 14px;
+
     text-decoration: none;
     color: #e5e7eb;
-    transition: 0.2s;
+
+    border: 1px solid rgba(255,255,255,0.05);
+
+    transition: 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    background: #334155;
+    transform: translateY(-6px);
+    background: rgba(51, 65, 85, 0.6);
+}*/
+
+/*===========================================
+==================FOOTER=====================*/
+
+/*footer {
+    background-color: grey; /* light brown/nude */
+  /*  color: #4b3a2f;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px 2px;
 }
+
+/*footer h3 {
+    margin-bottom: 10px;
+}*/
+
+/*footer p {
+    margin: 5px 0;
+}
+
+.footer-contacts {
+    margin: 15px 0;
+    gap: 5px;
+}
+
+.footer-contacts a {
+    display: inline-block;
+    margin: 2px 6px;
+    padding: 5px 9px;
+    background-color: grey;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.footer-contacts a:hover {
+    background-color: #9c6243;
+}
+
+/* ================= FOOTER ICONS ================= */
+/*.footer-icon {
+    width: 35px;
+    height: 35px;
+    margin: 0.5px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.footer-icon:hover {
+    transform: scale(1.1);
+}
+/* === copy === */
+/*.footer-copy {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #3d2e23;
+}*/

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Karabo | Portfolio</title>
+    <title>Kamogelo Meno | Portfolio</title>
     <link rel="stylesheet" href="/styles.css">
 
     <!-- ICONS (important) -->
@@ -30,7 +30,7 @@
             <h2>Kamogelo Meno</h2>
 
             <div class="socials">
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/Kamogelo21"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
@@ -43,7 +43,7 @@
 
         <!-- HERO TEXT -->
         <section id="home" class="section">
-            <h1 class="big-title">Software Engineer</h1>
+            <h1 class="big-title">Software<br>Engineer</h1>
 
             <p class="intro">
                 I build clean, functional software with a focus on backend systems,
@@ -53,38 +53,92 @@
 
         <!-- PROJECTS -->
         <section id="projects" class="section">
-            <h2>Projects</h2>
+            <h2 class="projects-title">Projects</h2>
 
-            <div class="projects-grid">
-                <a href="#" class="project-card">
-                    <h3>Robot Worlds</h3>
-                    <p>Java simulation with persistence</p>
+            <div class="project-row">
+
+                <!-- IMAGE → LIVE SITE -->
+                <a href="https://mangopebakeryandfastfood-1.onrender.com" target="_blank" class="project-thumb">
+                    <img src="images/Screenshot.png" alt="">
                 </a>
 
-                <a href="#" class="project-card">
-                    <h3>Data Cleaner</h3>
-                    <p>Python data processing tool</p>
+                <!-- PROJECT NAME → GITHUB -->
+                <div class="project-text">
+                    <a href="https://github.com/Kamogelo21/mangopebakeryandfastfood" target="_blank">
+                        <h3>Bakery Order Management System</h3>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="project-row">
+
+                <!-- IMAGE → LIVE SITE -->
+                <a href="https://thaps-ink.onrender.com" target="_blank" class="project-thumb">
+                    <img src="images/ThapsInk.png" alt="">
                 </a>
+
+                <!-- PROJECT NAME → GITHUB -->
+                <div class="project-text">
+                    <a href="https://github.com/Kamogelo21/Thapelo_Tattoo-Website" target="_blank">
+                        <h3>Tattoo Booking System</h3>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="project-row">
+
+                <!-- IMAGE → LIVE SITE -->
+                <a href="#" target="_blank" class="project-thumb">
+                    <img src="images/job-tracker.png" alt="">
+                </a>
+
+                <!-- PROJECT NAME → GITHUB -->
+                <div class="project-text">
+                    <a href="https://github.com/Kamogelo21/job-application-tracker" target="_blank">
+                        <h3>Job Application Tracking System</h3>
+                    </a>
+                </div>
+
             </div>
         </section>
 
         <!-- ABOUT -->
         <section id="about" class="section">
-            <h2>About</h2>
+            <h2 class="about-title">About Me</h2>
             <p>
-                I enjoy building structured systems and solving problems through code.
-                My focus is on backend development and data-driven applications.
+                I am from a small township in Soweto called Rockville. I did not know anything about Software Engineering
+                until I got to WeThinkCode. A lot of my love for building software started there and I learnt a lot from
+                the institution. From independent working to group collaborations, and peer-to-peer learning, I inherited
+                resilience and confidence to chanel myself into real, industry work. Towards the end of the program I started
+                utilizing my skills through building applications for small businesses around me. That was my first step into
+                the industry, and it brought me joy to see the applications alive and bringing more revenue as well as
+                ease into the businesses. That then got me to open an account in Upwork and expand my love for software into
+                freelance work. I am always seeking for growth in the industry and I cannot wait to learn and contribute to
+                big IT firms, and perhaps start my own in the future.
             </p>
         </section>
 
         <!-- CONTACT -->
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>Email: karabomeno18@gmail.com</p>
+        <section class="contact">
+            <h1>Let's Work Together</h1>
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <br><label for="details">Message</label>
+                <textarea id="details" name="details" rows="4"></textarea>
+
+                <button type="submit">Get In Touch</button>
+                <p id="formMessage"></p>
+            </form>
         </section>
 
     </main>
-
 </div>
 
 </body>
