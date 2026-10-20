@@ -2,32 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kamogelo Meno</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+<body class="page-body">
+    <header class="site-header">
+        <a href="/" class="brand-mark" aria-label="Kamogelo Meno home">KM</a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/about" class="nav-link">About</a>
+            <a href="/projects" class="nav-link">Projects</a>
+            <a href="/contact" class="nav-link active">Contact</a>
+        </nav>
+    </header>
 
-<nav class="navbar">
-    <div class="logo">MyPortfolio</div>
-    <div class="nav-links">
-        <a href="/" class="active">Home</a>
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
-  </div>
-</nav>
+    <main class="page-content contact-page">
+        <section class="contact-panel">
+            <div class="contact-copy">
+                <p class="eyebrow">Let’s connect</p>
+                <h1>Let’s build something useful.</h1>
+                <p>
+                    I’m open to software engineering opportunities, freelance work, and collaborations around thoughtful,
+                    practical digital products.
+                </p>
+            </div>
 
-<section class="page-section">
-    <h1>Contact</h1>
-
-    <p>If you'd like to reach out, feel free to connect:</p>
-
-    <div class="contact-links">
-        <p>Email: your@email.com</p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-        <p>LinkedIn: <a href="#" target="_blank">Your LinkedIn</a></p>
-    </div>
-</section>
-
+            <div class="contact-links" aria-label="Contact links">
+                <a href="https://github.com/Kamogelo21" target="_blank" rel="noopener noreferrer" class="contact-item github-item">
+                    <span class="contact-label">GitHub</span>
+                    <strong>github.com/Kamogelo21</strong>
+                </a>
+                <a href="/" class="contact-item portfolio-item">
+                    <span class="contact-label">Portfolio</span>
+                    <strong>Home</strong>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
