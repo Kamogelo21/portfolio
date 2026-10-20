@@ -2,52 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Kamogelo Meno</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+<body class="page-body">
+    <header class="site-header">
+        <a href="/" class="brand-mark" aria-label="Kamogelo Meno home">KM</a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/about" class="nav-link">About</a>
+            <a href="/projects" class="nav-link active">Projects</a>
+            <a href="/contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
 
-<nav class="navbar">
-    <div class="logo">MyPortfolio</div>
-    <div class="nav-links">
-        <a href="/" class="active">Home</a>
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
-    </div>
-</nav>
+    <main class="page-content projects-page">
+        <section class="page-intro">
+            <p class="eyebrow">Selected work</p>
+            <h1>Projects</h1>
+        </section>
 
-<section class="page-section">
-    <h1>Projects</h1>
+        <div class="project-list project-list-page">
+            <article class="project-item project-item-1">
+                <a class="project-image" href="https://mangopebakeryandfastfood-1.onrender.com" target="_blank" rel="noopener noreferrer" aria-label="Open the Bakery Order Management System live project">
+                    <img src="/images/Screenshot.png" alt="Bakery Order Management System interface preview">
+                </a>
+                <div class="project-copy">
+                    <span class="project-tag">Web application</span>
+                    <h3>Bakery Order Management System</h3>
+                    <p>
+                        A Java-based simulation where robots navigate a grid world with obstacles and persistence using a database.
+                    </p>
+                </div>
+            </article>
 
-    <div class="projects-grid">
+            <article class="project-item project-item-2">
+                <a class="project-image" href="https://thaps-ink.onrender.com" target="_blank" rel="noopener noreferrer" aria-label="Open the Tattoo Booking System live project">
+                    <img src="/images/ThapsInk.png" alt="Tattoo Booking System interface preview">
+                </a>
+                <div class="project-copy">
+                    <span class="project-tag">Booking platform</span>
+                    <h3>Tattoo Booking System</h3>
+                    <p>
+                        A Python tool for cleaning datasets by handling duplicates, missing values, and formatting inconsistencies.
+                    </p>
+                </div>
+            </article>
 
-        <a href="https://github.com/yourusername/project1" target="_blank" class="project-card">
-            <h2>Robot Worlds</h2>
-            <p>
-                A Java-based simulation where robots navigate a grid world
-                with obstacles and persistence using a database.
-            </p>
-        </a>
-
-        <a href="https://github.com/yourusername/project2" target="_blank" class="project-card">
-            <h2>Data Cleaning Tool</h2>
-            <p>
-                A Python tool for cleaning datasets by handling duplicates,
-                missing values, and formatting inconsistencies.
-            </p>
-        </a>
-
-        <a href="https://your-live-app.com" target="_blank" class="project-card">
-            <h2>Bakery Website</h2>
-            <p>
-                A responsive website for a fast food and bakery business
-                with modern UI and ordering integration.
-            </p>
-        </a>
-
-    </div>
-</section>
-
+            <article class="project-item project-item-3">
+                <a class="project-image" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open the Job Application Tracking System live project">
+                    <img src="/images/job-tracker.png" alt="Job Application Tracking System interface preview">
+                </a>
+                <div class="project-copy">
+                    <span class="project-tag">Productivity tool</span>
+                    <h3>Job Application Tracking System</h3>
+                    <p>
+                        A responsive website for a fast food and bakery business with modern UI and ordering integration.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </main>
 </body>
 </html>
